@@ -1,4 +1,6 @@
 import streamlit as st
+from backend import get_data
+
 
 st.title("Weather Forecast for the next days")
 place=st.text_input("place")
@@ -10,3 +12,4 @@ option=st.selectbox("select data to view",
                     ("Temprature", "Sky"))
 
 st.subheader(f"{option} for the next {days} days in {place}")
+data=
